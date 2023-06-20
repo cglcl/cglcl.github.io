@@ -429,30 +429,31 @@
 
 
 
-
+  <div id="giteement-ctn"></div>
   
-  <div id="gitment-ctn"></div>
-  
-    <!-- 中文 -->
-    <link rel="stylesheet" href="/lib/gitment.css">
-    <script src="/lib/gitment.js"></script>
+    <link rel="stylesheet" href="/lib/default.css">
+    <script src="/lib/giteement.browser.js"></script>
   
   <script>
-    <!-- id: "Hello World" -->
-    var gitment = new Gitment({
-      id: "20230615000813",
-      owner: 'cglcl',
-      repo: 'gitment',
-      oauth: {
-        client_id: 'eb86ccdbde4383a74795',
-        client_secret: '27114e4b4d08a32f0e3f04e57414fcec28c8e215',
-      },
-    })
-    gitment.render('gitment-ctn')
+  <!-- id: "Hello World" -->
+  var giteement = new Giteement({
+    id: '20230615000813',
+    owner: 'cglcl',
+    repo: 'giteement',
+    backcall_uri: 'https://cglcl.github.io',
+    oauth_uri: 'https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token',
+    oauth: {
+      client_id: 'a0c0b7c94ed5dd03d9ce665c8f34c372fc44b5ab377e9bd105f0ea37dea68e9c',
+      client_secret: 'a84e75d5420942f0bb98e56744a8f216da7ea33057a71f44fe8b063406da35b0'
+    },
+  })
+  giteement.render('giteement-ctn')
   </script>
 
 
-  
+
+
+
 
 
 
