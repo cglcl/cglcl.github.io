@@ -72,4 +72,5 @@ npm install --save hexo-deployer-git
 hexo clean
 hexo g
 hexo s
+git remote add github git@github.com:cglcl/blog-backup.git
 ```
