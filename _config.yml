@@ -106,26 +106,27 @@ deploy:
   repository: git@github.com:cglcl/cglcl.github.io.git
   branch: main
 backup:
-   type: git         # 默认不变
-   theme: yilia-plus      # 主题名称
-   message: this is my  blog backup  # 提交信息
-   repo:
-     github: git@github.com:cglcl/blog-backup.git,master
+  type: git         # 默认不变
+  theme: yilia-plus      # 主题名称
+  message: this is my  blog backup  # 提交信息
+  repo:
+    github: git@github.com:cglcl/blog-backup.git,master
 jsonContent:
-    meta: false
-    pages: false
-    posts:
-      title: true
-      date: true
-      path: true
-      text: false
-      raw: false
-      content: false
-      slug: false
-      updated: false
-      comments: false
-      link: false
-      permalink: false
-      excerpt: false
-      categories: false
-      tags: true
+  file: content.json
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: true
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: true
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
